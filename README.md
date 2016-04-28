@@ -1,9 +1,5 @@
 # linuxsetup
 
-For Ubuntu<16.40 use config_gccupdate.sh for getting a recent compiler
-	
-	config_gccupdate.sh
-
 For ROS specify both the platform and the ros version
 
 	UBUNTUNAME=xenial ROSNAME=indigo config_ros.sh
@@ -41,5 +37,11 @@ Use the ppa as in the following file
 
 	config_pcl.sh
 
+#GCC
+For Ubuntu<16.40 use config_gccupdate.sh for getting a recent compiler
+	
+	config_gccupdate.sh
+
+	
 #TODO
 Instructions for PCL and OpenCV with GPU
