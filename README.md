@@ -25,7 +25,16 @@ Prerequisites of OpenCV 3.1
 
 	sudo apt-get install --assume-yes libopencv-dev build-essential cmake git libgtk2.0-dev pkg-config python-dev python-numpy libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev libtbb-dev libqt4-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils unzip
 
-Then see instructions at: https://github.com/BVLC/caffe/wiki/Ubuntu-15.10-OpenCV-3.1-Installation-Guide
+Then see instructions at: 
+- https://github.com/BVLC/caffe/wiki/Ubuntu-15.10-OpenCV-3.1-Installation-Guide
+- http://www.askaswiss.com/2016/01/how-to-install-opencv-3-1-python-ubuntu-14-04.html
+
+#RGB-D Vision
+Manual install is needed for: libfreenect libfreenect2 OpenNI
+
+Repositories:
+- git://github.com/OpenKinect/libfreenect.git
+- git://github.com/OpenKinect/libfreenect2.git
 
 #PCL
 Use the ppa as in the following file
