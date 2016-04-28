@@ -11,6 +11,8 @@ For other 3D related packages (little3d and CoCo)
 #NVidia and CUDA
 For NVidia use the tools provided by Ubuntu to install the driver
 
+See Instructions here: https://github.com/BVLC/caffe/wiki/Install-Caffe-on-EC2-from-scratch-(Ubuntu,-CUDA-7,-cuDNN)
+
 For Nvidia CUDA 7.5 then install from website (SIGH)
 TODO PATCHES needed for 16.04 GCC 5.3
 
