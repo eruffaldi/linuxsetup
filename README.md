@@ -8,13 +8,32 @@ For other 3D related packages (little3d and CoCo)
 
 	config_3d.sh	
 
-#NVidia and CUDA
-For NVidia use the tools provided by Ubuntu to install the driver
+#NVidia 
+With 16.04 everything is smooth
 
-See Instructions here: https://github.com/BVLC/caffe/wiki/Install-Caffe-on-EC2-from-scratch-(Ubuntu,-CUDA-7,-cuDNN)
+#Nvidia CUDA
 
-For Nvidia CUDA 7.5 then install from website (SIGH)
-TODO PATCHES needed for 16.04 GCC 5.3
+Ubuntu 16.04 + CUDA 7.5: from apt-get (initially it was CUDA 7.0)
+Ubuntu 14.04 + CUDA 7.0: from apt-get
+Ubuntu 14.04 + CUDA 7.5: manual install from script of NVidia
+
+The apt-get is:
+ apt-get -s install cuda
+
+The manual install is:
+1) Download CUDA run file (see below)
+2) Chmod and run it with --override
+
+CUDA run file for 7.5.18:
+ http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run
+
+
+The Nvidia CUDA 7.5 can be also found in https://launchpad.net/ubuntu/+source/nvidia-cuda-toolkit
+
+Other examples of installers:
+- https://github.com/BVLC/caffe/wiki/Install-Caffe-on-EC2-from-scratch-(Ubuntu,-CUDA-7,-cuDNN)
+- https://www.pugetsystems.com/labs/articles/NVIDIA-CUDA-with-Ubuntu-16-04-beta-on-a-laptop-if-you-just-cannot-wait-775/
+
 
 #OpenCV 
 Ubuntu 16.04 comes with 2.4.9, 14.04 with 2.3.
