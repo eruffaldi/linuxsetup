@@ -7,6 +7,7 @@ RUN apt-get -y install ros-indigo-desktop-full
 RUN apt-get -y install git-core python-argparse python-wstool python-vcstools python-rosdep ros-indigo-control-msgs ros-indigo-joystick-drivers
 RUN apt-get -y install gazebo2 ros-indigo-qt-build ros-indigo-driver-common ros-indigo-gazebo-ros-control ros-indigo-gazebo-ros-pkgs ros-indigo-ros-control ros-indigo-control-toolbox ros-indigo-realtime-tools ros-indigo-ros-controllers ros-indigo-xacro python-wstool ros-indigo-tf-conversions ros-indigo-kdl-parser
 
+# final part
 RUN rosdep init
 RUN rosdep update
 RUN apt-get install python-rosinstall
@@ -22,6 +23,9 @@ RUN catkin_make
 RUN catkin_make install
 RUN wget https://github.com/RethinkRobotics/baxter/raw/master/baxter.sh
 RUN chmod u+x baxter.sh
+
+#extra packages for SSSA TAUM
+RUN apt-get install ros-indigo-openni2-camera ros-indigo-visp ros-indigo-visp-bridge ros-indigo-moveit-core libzmq-dev libx264-dev ros-indigo-moveit-ros-move-group ros-indigo-ecl-geometry
 
 CMD /bin/bash
 
