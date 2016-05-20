@@ -1,5 +1,7 @@
 FROM ubuntu:14.04
 
+RUN apt-get -y update
+RUN apt-get -y install wget
 RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'
 RUN wget http://packages.ros.org/ros.key -O - | apt-key add -
 RUN apt-get -y update
@@ -26,7 +28,8 @@ RUN chmod u+x baxter.sh
 
 #extra packages for SSSA TAUM
 RUN apt-get install ros-indigo-openni2-camera ros-indigo-visp ros-indigo-visp-bridge ros-indigo-moveit-core libzmq-dev libx264-dev ros-indigo-moveit-ros-move-group ros-indigo-ecl-geometry
-
+RUN apt-get install x11-apps xfce4
+ENV source /opt/ros/indigo/setup.bash
 CMD /bin/bash
 
 #MISSING DOWNLOAD of GAZEBO models inside: user/.gazebo/models
