@@ -17,6 +17,7 @@ RUN mkdir -p ~/ros_ws/src
 RUN source /opt/ros/indigo/setup.bash
 RUN cd ~/ros_ws/src
 RUN wstool init .
+# RUN wstool merge https://raw.githubusercontent.com/RethinkRobotics/baxter/release-1.1.1/baxter_sdk.rosinstall
 RUN wstool merge https://raw.githubusercontent.com/RethinkRobotics/baxter/master/baxter_sdk.rosinstall
 RUN wstool merge https://raw.githubusercontent.com/RethinkRobotics/baxter_simulator/master/baxter_simulator.rosinstall
 RUN wstool update
