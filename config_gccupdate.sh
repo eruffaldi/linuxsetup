@@ -10,5 +10,6 @@ add-apt-repository ppa:ubuntu-toolchain-r/test
 apt-get update
 
 #GCC
-apt-get -q -y install gcc-$GCCVERSION
+apt-get -q -y install g++-$GCCVERSION
 update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-$GCCVERSION 50
+update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-$GCCVERSION 50
