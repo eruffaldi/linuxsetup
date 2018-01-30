@@ -8,10 +8,10 @@ For other 3D related packages (little3d and CoCo)
 
 	config_3d.sh	
 
-#NVidia 
+# NVidia 
 With 16.04 everything is smooth
 
-#Nvidia CUDA
+# Nvidia CUDA
 
 Ubuntu 16.04 + CUDA 7.5: from apt-get (initially it was CUDA 7.0)
 Ubuntu 14.04 + CUDA 7.0: from apt-get
@@ -35,7 +35,7 @@ Other examples of installers:
 - https://www.pugetsystems.com/labs/articles/NVIDIA-CUDA-with-Ubuntu-16-04-beta-on-a-laptop-if-you-just-cannot-wait-775/
 
 
-#OpenCV 
+# OpenCV 
 Ubuntu 16.04 comes with 2.4.9, 14.04 with 2.3.
 
 Prerequisites of OpenCV 3.1
@@ -46,23 +46,23 @@ Then see instructions at:
 - https://github.com/BVLC/caffe/wiki/Ubuntu-15.10-OpenCV-3.1-Installation-Guide
 - http://www.askaswiss.com/2016/01/how-to-install-opencv-3-1-python-ubuntu-14-04.html
 
-#RGB-D Vision
+# RGB-D Vision
 Manual install is needed for: libfreenect libfreenect2 OpenNI
 
 Repositories:
 - git://github.com/OpenKinect/libfreenect.git
 - git://github.com/OpenKinect/libfreenect2.git
 
-#PCL
+# PCL
 Use the ppa as in the following file
 
 	config_pcl.sh
 
-#GCC
+# GCC
 For Ubuntu<16.40 use config_gccupdate.sh for getting a recent compiler
 	
 	config_gccupdate.sh
 
 	
-#TODO
+# TODO
 Instructions for PCL and OpenCV with GPU
