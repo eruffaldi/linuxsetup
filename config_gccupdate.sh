@@ -3,7 +3,7 @@ GCCVERSION=4.8
 
 # Setup of GCC 4.8.*
 export DEBIAN_FRONTEND=noninteractive
-apt-get -q -y install python-software-properties
+apt-get -q -y install software-properties-common
 add-apt-repository ppa:ubuntu-toolchain-r/test
 
 
